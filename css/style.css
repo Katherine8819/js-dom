@@ -19,21 +19,66 @@ button {
   transition: all 0.25s ease-in;
 }
 
-
-table {
+.traffic-light {
+  width: 60%;
   margin: 0 auto;
-  width: 50%;
-  height: 100vh;
-  
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-td {
-  width: 50px;
-  height: 50px;
-  border: 1px solid green;
+.light__btn {
+  padding: 50px;
+  margin: 100px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  outline: none;
+  background-color: #5d00b4;
+  color: #fff;
+  cursor: pointer;
 }
 
-td:first-child {
-  font-weight: 700;
+.light__btn:hover,
+.light__btn:active {
+  background-color: #bd90e7;
+  border-color: #5d00b4;
+  color: #5d00b4;
+}
+
+.light {
+  width: 200px;
+  height: 480px;
+  padding: 30px;
+  margin: 100px auto;
+  background-color: #1f1111;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.light__lamp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  left: 50%;
+  z-index: 1;
+}
+
+.light__lamp-red {  
+  background-color: #f30000;
+  opacity: 1;
+}
+
+
+.light__lamp-yellow {
+  background-color: #ffd105;  
+  opacity: 0.3;
+}
+
+
+.light__lamp-green {
+  background-color: #0baa0b;
+  opacity: 0.3;
 }

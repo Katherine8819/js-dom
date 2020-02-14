@@ -13,10 +13,20 @@
 
 <body>
 
-  <ol id="playList"></ol>
+  <ol id="playList" hidden></ol>
 
-  <script src="js/01_song-list.js"></script>
-  <!-- <script src="js/03_traffic-light.js"></script> -->
+  <div class="traffic-light" id="traffic-light" hidden>
+    <div class="light">
+      <div class="light__lamp light__lamp-red" id="red"></div>
+      <div class="light__lamp light__lamp-yellow " id="yellow"></div>
+      <div class="light__lamp light__lamp-green" id="green"></div>
+    </div>
+
+    <button class="light__btn" id="btn">Change the color</button>
+  </div>
+
+  <!-- <script src="js/01_song-list.js"></script> -->
+  <script src="js/03_traffic-light.js"></script>
 </body>
 
 </html>

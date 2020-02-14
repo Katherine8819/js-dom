@@ -1,3 +1,5 @@
+document.getElementById('traffic-light').style.display = 'none'
+
 var playList = [
     { author: "LED ZEPPELIN", song: "STAIRWAY TO HEAVEN" },
     { author: "QUEEN", song: "BOHEMIAN RHAPSODY" },
@@ -13,6 +15,7 @@ function showPlayList() {
     let list = document.getElementById('playList'),
         li = ``;
 
+    list.removeAttribute('hidden')
     list.style.textTransform = "capitalize"
 
     for (let i = 0; i < playList.length; i++) {
